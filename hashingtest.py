@@ -1,0 +1,10 @@
+import hashlib
+data=input("Enter data to encrypt ")
+a=hashlib.md5(data.encode()).hexdigest()
+b=hashlib.sha1(data.encode()).hexdigest()
+c=hashlib.sha256(data.encode()).hexdigest()
+d=hashlib.sha512(data.encode()).hexdigest()
+print(a,len(a))
+print(b,len(b))
+print(c,len(c))
+print(d,len(d))
